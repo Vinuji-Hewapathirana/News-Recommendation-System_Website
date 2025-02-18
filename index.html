@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title>Online News Article Management System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="login-container">
+    <h2>Login</h2>
+    <form action="login_process.php" method="POST" class="login-form" onsubmit="return validateLoginForm()">
+        <input type="text" id="username" name="username" placeholder="Username">
+        <input type="password" id="password" name="password" placeholder="Password">
+        <a href="assets/password.txt" class="forgot-password">Forgot password?</a>
+        <button type="submit" class="login-button">Login</button>
+    </form>
+</div>
+
+<script>
+    function validateLoginForm() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        if (username === "") {
+            alert("Please enter your username.");
+            return false;
+        }
+
+        if (password === "") {
+            alert("Please enter your password.");
+            return false;
+        }
+
+        // If the fields are filled, allow the form to be submitted
+        return true;
+    }
+</script>
+
+</body>
+</html>
