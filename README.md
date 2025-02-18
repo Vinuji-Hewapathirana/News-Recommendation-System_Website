@@ -1,9 +1,9 @@
-Personalized News Recommendation System
+##Personalized News Recommendation System
 
-Overview
+#Overview
 This project is a personalized News Recommendation System that suggests articles based on user preferences. The system consists of a frontend built with HTML & CSS and a backend database using SQL for managing articles, users, and recommendations.
 
-Features
+#Features
 - User Registration & Login: Allows users to sign up and manage their profiles.
 - News Categories: Articles categorized by topic (e.g., Technology, Business, Sports).
 - Personalized Recommendations: Uses stored user interactions to suggest articles.
